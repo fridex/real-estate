@@ -1,5 +1,6 @@
-import sys
-import flask
+import time
+
 
 if __name__ == '__main__':
-    sys.exit(1)
+    while True:
+        time.sleep(float("inf"))
