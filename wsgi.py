@@ -1,6 +1,8 @@
-import time
+from flask import Flask
+app = Flask(__name__)
+application = app
 
 
-if __name__ == '__main__':
-    while True:
-        time.sleep(float("inf"))
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
